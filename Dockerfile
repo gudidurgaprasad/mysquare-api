@@ -3,7 +3,7 @@ FROM tomcat:latest
 
 LABEL maintainer="Prasad"
 
-ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
+ADD ./target/mysquare-api.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
