@@ -16,20 +16,20 @@ pipeline {
           }
         }
         
-  stage('Docker Build and Tag') {
-           steps {
-                sh 'docker build -t samplewebapp:latest .' 
-                sh 'docker tag samplewebapp gudidurgaprasad/samplewebapp:latest'
-          }
-        }
+//   stage('Docker Build and Tag') {
+//            steps {
+//                 sh 'docker build -t samplewebapp:latest .' 
+//                 sh 'docker tag samplewebapp gudidurgaprasad/samplewebapp:latest'
+//           }
+//         }
      
-   stage('Publish image to Docker Hub') {
-       steps {
-       withDockerRegistry(credentialsId: 'dockerHub', url: '') {
-          sh  'docker push gudidurgaprasad/samplewebapp:latest'
-        }
-         }
-       }
+//    stage('Publish image to Docker Hub') {
+//        steps {
+//        withDockerRegistry(credentialsId: 'dockerHub', url: '') {
+//           sh  'docker push gudidurgaprasad/samplewebapp:latest'
+//         }
+//          }
+//        }
 	 
 // 	stage ('Deploy') {
 //         steps {
