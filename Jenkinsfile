@@ -7,7 +7,7 @@ pipeline {
  stages {
       stage('checkout') {
             steps { 
-               git branch: 'main', credentialsId: '3528d4ea-1826-4ddf-b1eb-0e5701675d0a', url: 'https://github.com/gudidurgaprasad/maven.git'
+               git branch: 'main', credentialsId: '3528d4ea-1826-4ddf-b1eb-0e5701675d0a', url: 'https://github.com/gudidurgaprasad/mysquare-api.git'
             }
         }
 	 stage('Execute Maven') {
